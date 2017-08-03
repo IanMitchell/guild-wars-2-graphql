@@ -15,7 +15,7 @@ const WorldType = new GraphQLObjectType({
     population: {
       type: GraphQLString,
       resolve: (world) => world.population,
-    }
+    },
   }),
 });
 

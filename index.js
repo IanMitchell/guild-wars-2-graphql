@@ -1,4 +1,3 @@
-const micro = require('micro');
 const graphqlHTTP = require('express-graphql');
 const Schema = require('./schema/schema.js');
 

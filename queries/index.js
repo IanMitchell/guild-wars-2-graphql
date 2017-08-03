@@ -1,7 +1,7 @@
 const { GraphQLObjectType } = require('graphql');
-const WorldQuery = require('./world');
-const BuildQuery = require('./build');
-const CurrencyQuery = require('./currency');
+const WorldQuery = require('./world-query');
+const BuildQuery = require('./build-query');
+const CurrencyQuery = require('./currency-query');
 
 const Query = new GraphQLObjectType({
   name: 'Query',
@@ -9,7 +9,7 @@ const Query = new GraphQLObjectType({
   fields: () => Object.assign({},
     WorldQuery,
     BuildQuery,
-    CurrencyQuery
+    CurrencyQuery,
   ),
 });
 
