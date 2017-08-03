@@ -1,9 +1,10 @@
 const { GraphQLList, GraphQLInt, GraphQLString } = require('graphql');
 const fetch = require('node-fetch');
+const { API_ENDPOINT_V2 } = require('../api/constants');
 const WorldType = require('../types/world-type');
 
 async function fetchWorlds(ids) {
-  const response = await fetch(`https://api.guildwars2.com/v2/worlds?ids=${ids}`);
+  const response = await fetch(`${API_ENDPOINT_V2}/worlds?ids=${ids}`);
   return await response.json()
 }
 

@@ -1,10 +1,14 @@
 const { GraphQLObjectType } = require('graphql');
 const WorldQuery = require('./world');
+const BuildQuery = require('./build');
 
 const Query = new GraphQLObjectType({
   name: 'Query',
   description: 'Your Root Query',
-  fields: () => Object.assign({}, WorldQuery),
+  fields: () => Object.assign({},
+    WorldQuery,
+    BuildQuery
+  ),
 });
 
 module.exports = Query;
