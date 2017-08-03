@@ -6,7 +6,7 @@ const BuildType = new GraphQLObjectType({
   fields: () => ({
     id: {
       type: GraphQLInt,
-      resolve: (build) => build.build_id,
+      resolve: (build) => build.id,
     },
   }),
 });
