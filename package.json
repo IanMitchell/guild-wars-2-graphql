@@ -1,0 +1,15 @@
+{
+  "name": "guild-wars-2-graphql",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2",
+    "micro": "^6.2.0",
+    "node-fetch": "^1.7.1"
+  }
+}
